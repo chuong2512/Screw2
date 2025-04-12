@@ -47,32 +47,6 @@ public class REManager : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void OnPressDown(int i)
-    {
-        switch (i)
-        {
-            case 1:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(30);
-                IAPManager.Instance.BuyProductID(IAPKey.PACK1_RE);
-                break;
-            case 2:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(90);
-                IAPManager.Instance.BuyProductID(IAPKey.PACK2_RE);
-                break;
-            case 3:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(180);
-                IAPManager.Instance.BuyProductID(IAPKey.PACK3_RE);
-                break;
-            case 4:
-                IAPManager.OnPurchaseSuccess = () =>
-                    AddTime(360);
-                IAPManager.Instance.BuyProductID(IAPKey.PACK4_RE);
-                break;
-        }
-    }
 
     private void AddTime(int i)
     {

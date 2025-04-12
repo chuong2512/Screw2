@@ -8,16 +8,11 @@ using UnityEngine.Purchasing;
 public class IAPKey
 {
     public const string PACK1 = "add1";
-    public const string PACK2 = "add3";
-    public const string PACK3 = "add5";
-    public const string PACK4 = "add10";
-    public const string PACK05 = "add0.5";
-    public const string PACK5 = "remove_ads";
-    
-    public const string PACK1_RE = "add1";
-    public const string PACK2_RE = "add3";
-    public const string PACK3_RE = "add5";
-    public const string PACK4_RE = "add10";
+    public const string PACK2 = "add2";
+    public const string PACK3 = "add3";
+    public const string PACK4 = "add4";
+    public const string PACK5 = "add5";
+    public const string PACK6 = "add6";
 }
 
 public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
@@ -54,8 +49,8 @@ public class IAPManager : PersistentSingleton<IAPManager>, IStoreListener
         builder.AddProduct(IAPKey.PACK2, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK3, ProductType.Consumable);
         builder.AddProduct(IAPKey.PACK4, ProductType.Consumable);
-        builder.AddProduct(IAPKey.PACK05, ProductType.Consumable);
-        builder.AddProduct(IAPKey.PACK5, ProductType.NonConsumable);
+        builder.AddProduct(IAPKey.PACK5, ProductType.Consumable);
+        builder.AddProduct(IAPKey.PACK6, ProductType.Consumable);
         UnityPurchasing.Initialize(this, builder);
     }
 

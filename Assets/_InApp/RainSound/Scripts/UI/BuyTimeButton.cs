@@ -70,7 +70,7 @@ public class BuyTimeButton : MonoBehaviour
 
         switch (_index)
         {
-            case 0:
+            /*case 0:
                 IAPManager.Instance.BuyProductID(IAPKey.PACK1_RE);
                 break;
             case 1:
@@ -81,7 +81,7 @@ public class BuyTimeButton : MonoBehaviour
                 break;
             case 3:
                 IAPManager.Instance.BuyProductID(IAPKey.PACK4_RE);
-                break;
+                break;*/
         }
     }
 
